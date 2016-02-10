@@ -1,0 +1,51 @@
+<html>
+<p id = "Hello"></p> 
+
+<button onclick="myFunction()">Username Entry</button>
+<button onclick="cFunction()">Confirm</button>
+<button onclick="newNameFunction()">New</button>
+<p id="demo"></p>
+
+<script>
+var original = false
+var New = false;
+function myFunction() {
+    var person = prompt("Please enter your name", "Harry Potter");
+    
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! Would You like to set this as your username?";
+    }
+	original = true
+}
+function newNameFunction() {
+   if (original == false){
+   alert("You need a Name to have a new one!");
+   }
+   if (original == true){
+   var person = prompt("Please enter your name", "Harry Potter");
+    
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! Would You like to set this as your username?";
+    }
+   }
+}
+function cFunction() {
+if (original == false){
+alert("You must have a username to confirm one.");
+} 
+   if (original = true){
+   if (confirm("Do you want this to be your alert User Name?") == true ){
+   var x;
+   var x = "You confirmed your user name!";
+   }else {}
+  
+   } 
+   
+    
+}
+</script>
+<body>
+</body>
+</html>
