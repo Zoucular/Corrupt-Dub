@@ -10,7 +10,11 @@
 var original = false
 var New = false;
 var C = false
-function myFunction() {
+function myFunction() { 
+if (original == true) {
+alert("Enter a new name with the enter keu");
+}
+if (original == false) {
     var person = prompt("Please enter your name", "Harry Potter");
     
     if (person != null) {
@@ -18,6 +22,7 @@ function myFunction() {
         "Hello " + person + "!";
     }
 	original = true
+}
 }
 function newNameFunction() {
    if (original == false & C == false){
