@@ -9,7 +9,8 @@
 <script>
 var original = false
 var New = false;
-var C = false
+var C = false;
+var ConCon = false;
 function myFunction() { 
 if (original == true) {
 alert("Enter a new name with the enter keu");
@@ -25,10 +26,10 @@ if (original == false) {
 }
 }
 function newNameFunction() {
-   if (original == false & C == false){
+   if (original == false && C == false){
    alert("You need a Name to have a new one!");
    }
-   if (original == true & C == true){
+   if (original == true && C == true){
    var person = prompt("Please enter your name", "Harry Potter");
     
     if (person != null) {
@@ -41,7 +42,7 @@ function cFunction() {
 if (original == false){
 alert("You must have a username to confirm one.");
 } 
-   if (original = true){
+   if (original == true){
    if (C = confirm("Do you want this to be your alert User Name?") == true ){
    var x;
    var x = "You confirmed your user name!";
